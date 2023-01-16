@@ -5,7 +5,7 @@ const url =
 
 exports.get = async (req, res) => {
   async function webscrap() {
-    const browser = await puppetter.launch({ headless: false });
+    const browser = await puppetter.launch();
     const page = await browser.newPage();
 
     await page.goto(url);
