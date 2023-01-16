@@ -10,7 +10,6 @@ exports.get = async (req, res) => {
   
 
     await page.goto(url);
-    console.log('Entrei na pagina esperada!');
 
     const data = await page.evaluate(() => {
         const itens = document.querySelectorAll('.thumbnail');
